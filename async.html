@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <style>
+        body {
+            transition: 3s;
+        }
+
+        .swal-button--confirm {
+            position: fixed;
+            left: 70%;
+            top: 65%
+        }
+
+        .swal-text {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        button {
+            height: 2rem;
+            width: 6rem;
+            position: relative;
+            left: 65%;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        form {
+            color: #edf6f9;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #333d29;
+            border-radius: 10px;
+        }
+
+        div {
+            margin: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: large;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form action="submit">
+        <div>
+            <label for="login">Input your login</label>
+            <input id='login' type="text" placeholder="login">
+        </div>
+
+        <div>
+            <label for="pass">Input your password</label>
+            <input id='pass' type="password" placeholder="password">
+        </div>
+        <div>
+            <button id='submit' value="Submit">Submit</button>
+        </div>
+    </form>
+    <script src="async.js"></script>
+</body>
+
+</html>
